@@ -1,21 +1,12 @@
+/*La complejidad de este algoritmo es de O(n) ya que, aunque se recorre hasta que la entrada quede vacía, las iteraciones están
+directamente relacionadas con n, así que así se repita dos veces o tres o etc. al final la complejidad total es de O(n), a no ser que
+haya un momento en el que se repita n veces por lo que es lineal amortizado.*/
+
 #include <iostream>
 #include <stack>
 #include <algorithm>
 #include <queue>
 using namespace std;
-
-void ImprimirStack(stack<int> s){
-    for(int i=0;i<5;i++){
-        cout<<s.top()<<"s ";
-        s.pop();
-    }
-}
-void ImprimirQueue(queue<int> s){
-    for(int i=0;i<5;i++){
-        cout<<s.front()<<"q ";
-        s.pop();
-    }
-}
 
 void rails(int n, queue<int> &entrada){
     queue<int> primero;
