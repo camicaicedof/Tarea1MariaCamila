@@ -1,3 +1,7 @@
+/*La complejidad del algoritmo que resuelve el problema, suponiendo que funciona por cada palabra que se da
+en el diccionario es, en el mejor caso O(1) y en el peor caso O(n). El mejor caso ocurre cuando el ciclo itera
+solamente una vez ya que la primera letra de la palabra no está en las letras que dieron para formarla. En
+el peor caso, todas las letras estarían, así que iteraría toda la longitud de la palabra.*/
 #include <iostream>
 #include <stack>
 #include <vector>
